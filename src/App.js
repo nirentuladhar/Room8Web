@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import Button from "./components/Button/button";
+import Login from "./routes/Login/";
+import Nav from "./components/Nav/";
 
 class App extends Component {
   render() {
     return (
       <div className="container">
         <div className="row">
-          <Button />
+          <Nav navItems={["Dashboard", "User"]} />
+          <Login />
         </div>
       </div>
     );
